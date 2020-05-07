@@ -1,0 +1,267 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "百年奥莱",
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"app-plus":{
+					"scrollIndicator":"none",
+					"titleNView":{
+						"buttons":[
+							{
+								"float":"left",
+								"fontSrc":"./static/iconfont.ttf",
+								"text":"\ue69d"
+							},
+							{
+								"float":"right",
+								"fontSrc":"./static/iconfont.ttf",
+								"text":"\ue622"
+							}
+						]
+					}
+				}
+			}
+		}
+	    ,{
+            "path" : "pages/list/list",
+            "style" : {
+            	"navigationBarBackgroundColor":"#FFFFFF",
+            	"app-plus":{
+            		"scrollIndicator":"none",
+            		"titleNView":{
+            			"searchInput":{
+            				"placeholder":"请输入关键字",
+            				"disabled":true,
+            				"align":"left",
+            				"borderRadius":"15px",
+            				"backgroundColor":"#F7F7F7",
+            				"placeholderColor":"#B3B3B3"
+            			}
+            		}
+            	}
+            }
+        }
+        ,{
+            "path" : "pages/shopcart/shopcart",
+            "style" : {
+				"app-plus":{
+					"titleNView":false,
+					"scrollIndicator":"none"
+				}
+			}
+        }
+        ,{
+            "path" : "pages/my/my",
+            "style" : {
+				"app-plus":{
+					"titleNView":false,
+					"scrollIndicator":"none"
+				}
+			}
+        }
+        ,{
+            "path" : "pages/search/search",
+            "style" : {
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"app-plus":{
+					"scrollIndicator":"none",
+					"titleNView":{
+						"searchInput":{
+							"placeholder":"nike",
+							"disabled":false,
+							"align":"left",
+							"autoFocus":true,
+							"borderRadius":"15px",
+							"backgroundColor":"#F7F7F7",
+							"placeholderColor":"#B3B3B3"
+						},
+						"buttons":[
+							{
+								"float":"right",
+								"color":"#636263",
+								"text":"搜索",
+								"fontSize":"16px",
+								"width":"60px"
+							}
+						]
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/search-list/search-list",
+            "style" : {
+           	"navigationBarBackgroundColor":"#FFFFFF",
+           	"app-plus":{
+           		"scrollIndicator":"none",
+           		"titleNView":{
+           			"searchInput":{
+           				"placeholder":"nike",
+           				"disabled":true,
+           				"align":"left",
+           				"borderRadius":"15px",
+           				"backgroundColor":"#F7F7F7",
+           				"placeholderColor":"#B3B3B3"
+           			},
+           			"buttons":[
+           				{
+           					"float":"right",
+           					"color":"#636263",
+           					"text":"筛选",
+           					"fontSize":"16px",
+           					"width":"60px"
+           				}
+           			]
+           		}
+           	}
+           }
+        }
+        ,{
+            "path" : "pages/details/details",
+            "style" : {
+				"navigationBarTitleText": "商品详情",
+				"app-plus":{
+					"scrollIndicator":"none",
+					"titleNView":{
+						"type":"transparent",
+						"buttons":[
+							{
+								"type":"menu"
+							},
+							{
+								"type":"share"
+							}
+						]
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/my-config/my-config",
+            "style" : {
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTitleText": "设置"
+			}
+        }
+        ,{
+            "path" : "pages/my-path-list/my-path-list",
+            "style" : {
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTitleText": "地址管理"
+			}
+        }
+        ,{
+            "path" : "pages/my-add-path/my-add-path",
+            "style" : {
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTitleText": "新增地址",
+				"app-plus":{
+					"scrollIndicator":"none",
+					"titleNView":{
+						"buttons":[
+							{
+								"float":"right",
+								"color":"#636263",
+								"text":"保存",
+								"fontSize":"16px",
+								"width":"60px"
+							}
+						]
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/my-order/my-order",
+            "style" : {
+				"navigationBarTitleText": "我的订单",
+				"navigationBarBackgroundColor":"#FFFFFF"
+			}
+        }
+        ,{
+            "path" : "pages/confirm-order/confirm-order",
+            "style" : {
+				"navigationBarTitleText": "确认订单",
+				"navigationBarBackgroundColor":"#FFFFFF"
+			}
+        }
+        ,{
+            "path" : "pages/payment/payment",
+            "style" : {
+				"app-plus":{
+					"titleNView":false,
+					"scrollIndicator":"none"
+				}
+			}
+        }
+        ,{
+            "path" : "pages/payment-success/payment-success",
+            "style" : {
+				"navigationBarTitleText": "支付成功",
+				"navigationBarBackgroundColor":"#FFFFFF"
+			}
+        }
+        ,{
+            "path" : "pages/login/login",
+            "style" : {
+				"app-plus":{
+					"titleNView":false,
+					"scrollIndicator":"none"
+				}
+			}
+        }
+        ,{
+            "path" : "pages/login-tel/login-tel",
+            "style" : {
+				"navigationBarTitleText": "输入手机号",
+				"navigationBarBackgroundColor":"#FFFFFF"
+			}
+        }
+        ,{
+            "path" : "pages/login-code/login-code",
+            "style" : {
+				"navigationBarTitleText": "输入验证码",
+				"navigationBarBackgroundColor":"#FFFFFF"
+			}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+	// "tabBar": {
+	// 	"color":"#636263",
+	// 	"selectedColor":"#636263",
+	// 	"spacing":"8px",
+	//     "list": [
+	// 		{
+	// 			"pagePath": "pages/index/index",
+	// 			"iconPath":"static/tabbar/index.png",
+	// 			"selectedIconPath":"static/tabbar/indexSelected.png",
+	// 			"text": "首页"
+	// 		}, 
+	// 		{
+	// 			"pagePath": "pages/list/list",
+	// 			"iconPath":"static/tabbar/list.png",
+	// 			"selectedIconPath":"static/tabbar/listSelected.png",
+	// 			"text": "分类"
+	// 		},
+	// 		{
+	// 			"pagePath": "pages/shopcart/shopcart",
+	// 			"iconPath":"static/tabbar/shop.png",
+	// 			"selectedIconPath":"static/tabbar/shopSelected.png",
+	// 			"text": "购物车"
+	// 		},
+	// 		{
+	// 			"pagePath": "pages/my/my",
+	// 			"iconPath":"static/tabbar/my.png",
+	// 			"selectedIconPath":"static/tabbar/mySelected.png",
+	// 			"text": "我的"
+	// 		}
+	// 	]
+	// }
+}
